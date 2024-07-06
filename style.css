@@ -1,0 +1,189 @@
+:root{
+    --primary: #000000;
+    --secodary: #e53939;
+    --branco: #ffffff;   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: var(--branco);
+    height: 7rem;
+    padding: 0 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1{
+    color: var(--secodary);
+    font-weight: bold;
+}
+
+.header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 4rem;
+    font-size: 1.4rem;
+}
+
+.header nav ul li a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.header nav ul li a:hover{
+    color: var(--secodary);
+    transition: 0.5s;
+}
+
+.home {
+    background-color: var(--primary);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex-direction: column;
+    font-size: 18px;
+    height: 50rem;
+    padding: 0 10rem;
+    align-items: center;
+}
+
+.home p {
+    font-size: 1.5rem;
+}
+
+/*EFEITO DE DIGITAÇÃO*/
+.container-typed-text {
+  display: flex;
+}
+
+.container-typed-text p {
+  font-size: 4rem;
+  padding: 2rem 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container-typed-text p span.typed-text {
+  font-weight: normal;
+  color: var(--secodary);
+  font-weight: bold;
+}
+.container-typed-text p span.cursor {
+  display: inline-block;
+  background-color: var(--branco);
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 0.5s infinite;
+}
+.container-typed-text p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: var(--branco); }
+  49% { background-color: var(--branco); }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: var(--branco); }
+}
+/*EFEITO DE DIGITAÇÃO*/
+
+/*EFEITO BUTTTON HOME*/
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: var(--secodary);
+    color: white;
+    padding: 1.5rem 1.5em;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  
+  button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+  }
+  
+  button:hover svg {
+    transform: translateX(2.2em) rotate(45deg) scale(1.1);
+  }
+  
+  button:hover span {
+    transform: translateX(7em);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes fly-1 {
+    from {
+      transform: translateY(0.1em);
+    }
+  
+    to {
+      transform: translateY(-0.1em);
+    }
+  }
+  
+/*EFEITO BUTTTON HOME*/
+
+
+.home .fancy-border-radius{
+    background-color: var(--secodary);
+    width: 30rem;
+    height: 30rem;
+    justify-items: end;
+    border-radius: 70% 30% 29% 71% / 52% 50% 50% 48% ;
+}
+
+
+.aboutme{
+    background-color: rgb(181, 71, 255);
+    height: 10rem;
+}
+
+.portfolio{
+    background-color: rgb(255, 71, 120);
+    height: 10rem;
+}
+
+.contato{
+    background-color: rgb(71, 255, 218);
+    height: 10rem;
+}
+
+.footer{
+    background-color: tomato;
+    height: 10rem;
+    padding: 0;
+}
