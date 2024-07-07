@@ -1,3 +1,5 @@
+
+
 :root{
     --primary: #000000;
     --secodary: #e53939;
@@ -19,10 +21,13 @@ html, body{
 .header{
     background-color: var(--branco);
     height: 7rem;
+    width: 100%;
     padding: 0 10rem;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     align-items: center;
+    box-shadow: solid 2px --primary;
 }
 
 .header h1{
@@ -48,14 +53,16 @@ html, body{
 }
 
 .home {
-    background-color: var(--primary);
+    background-image: url('/src/svg/layered-waves-haikei.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     color: var(--branco);
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     flex-direction: column;
     font-size: 18px;
-    height: 50rem;
+    height: 60rem;
     padding: 0 10rem;
     align-items: center;
 }
@@ -78,7 +85,7 @@ html, body{
 }
 .container-typed-text p span.typed-text {
   font-weight: normal;
-  color: var(--secodary);
+  color: var(--primary);
   font-weight: bold;
 }
 .container-typed-text p span.cursor {
@@ -104,7 +111,7 @@ html, body{
 button {
     font-family: inherit;
     font-size: 20px;
-    background: var(--secodary);
+    background: var(--primary);
     color: white;
     padding: 1.5rem 1.5em;
     margin-top: 2rem;
@@ -147,43 +154,141 @@ button {
   
   @keyframes fly-1 {
     from {
-      transform: translateY(0.1em);
-    }
+    transform: translateY(0.1em);
+  }
   
-    to {
-      transform: translateY(-0.1em);
-    }
+  to {
+    transform: translateY(-0.1em);
+  }
   }
   
 /*EFEITO BUTTTON HOME*/
 
 
 .home .fancy-border-radius{
-    background-color: var(--secodary);
-    width: 30rem;
-    height: 30rem;
-    justify-items: end;
-    border-radius: 70% 30% 29% 71% / 52% 50% 50% 48% ;
+  background-color: var(--primary);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 77% 23% 45% 55% / 58% 57% 43% 42%  ;
+}
+
+.home .column2{
+  display: flex;
+  justify-content: center;
+}
+
+.home .fancy-border-radius img{
+  width: 102%;
+  height: 100%;
+  border-radius: 77% 23% 45% 55% / 58% 57% 43% 42%  ;
 }
 
 
 .aboutme{
-    background-color: rgb(181, 71, 255);
-    height: 10rem;
+  color: var(--branco);
+  height: 50rem;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutme .container{
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.container .about{
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--secodary);
+  border-radius: 16px;
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+.container .title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.container .container-description{
+  display: grid;
+  grid-template-columns: 4fr 4fr;
+  gap: 2rem;
+  padding-left: 10rem;
+}
+
+.container .container-description h1{
+  padding-top: 6rem;
+  font-size: 2rem;
+}
+
+.container .container-description p{
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.container-information{
+  display: flex;
+  justify-content: center;
+}
+
+.container-information .contacts{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-self: end;
+  width: 100%;
+}
+
+.contacts div{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-right: 2rem;
+}
+
+.contacts h1{
+  padding-top: 2rem !important;
+  font-size: 12px !important;
+}
+
+.container-information p{
+  font-size: 15px !important;
+  font-weight: bold;
+  color: var(--secodary);
+  padding: none;
+}
+
+.container-img{
+  display: flex;
+  justify-content: center;
+  height: 25rem;
+  padding-left: 5rem;
+}
+.portfolio{
+  background-color: rgb(191, 255, 71);
+  height: 10rem;
 }
 
 .portfolio{
-    background-color: rgb(255, 71, 120);
-    height: 10rem;
+  background-color: rgb(255, 71, 120);
+  height: 10rem;
 }
 
 .contato{
-    background-color: rgb(71, 255, 218);
-    height: 10rem;
+  background-color: rgb(71, 255, 218);
+  height: 10rem;
 }
 
 .footer{
-    background-color: tomato;
-    height: 10rem;
-    padding: 0;
+  background-color: tomato;
+  height: 10rem;
+  padding: 0;
 }

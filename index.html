@@ -3,31 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     
-    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="src/css/pages/index/index.css">
 
-
+    <title>Document</title>
 </head>
 <body>
 
-    <header class="header">
+  <header class="header">
 
         <h1>Jonathan Pereira</h1>
 
         <nav>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Curriculo</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#aboutme">Sobre</a></li>
+                <li><a href="#curriculo">Curriculo</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
-    </header>
+  </header>
 
-    <section class="home">
+  <section class="home">
 
         <div class="column1">
             <p>Olá! Eu sou desenvolvedor...</p>
@@ -36,7 +35,7 @@
                 <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
             </div>
 
-            <p>Residente em Recife, PE</p>
+            <p>Residente em Pernambuco, BR</p>
 
             <button>
                 <div class="svg-wrapper-1">
@@ -62,33 +61,85 @@
         <div class="column2">
 
             <div class="fancy-border-radius">
-                <div class="perfil"></div>
+                <div class="perfil">
+                  <img src="/src/images/fotoperfil.png" alt="">
+                </div>
             </div>
 
         </div>
         
-    </section>
+  </section>
 
+  <section id="aboutme" class="aboutme">
+    <div class="container">
 
-    <section class="aboutme">
+      <div class="about"><p>Sobre</p></div>
 
-    </section>    
+      <div class="title"><p>Conheça-me mais</p></div>
 
-    <section class="portfolio">
+      <div class="container-description">
 
-    </section>
+        <div>
+          <h1>Olá! Eu sou Jonathan Pereira </h1>
 
-    <section class="contato">
+          <p>Sou estudante de Ciências da Computação, apaixonado tanto por Back-end quanto pelo Front-end. Gosto de desenvolver implementações simples e elegantes que agreguem valor real ao usuário final e que gerem uma experiência inovadora e de criar algoristimos que possam facilitar o trabalho de usuarios no dia a dia .</p>
+          
+          <div class="container-information">
 
-    </section>
+            <div class="contacts">
 
-    <footer class="footer">
+              <div>
+                <h1>Email:</h1>
+                <p>jonathanpereira.jsp@outlook.com</p>
+              </div>
+
+              <div>
+              <h1>Data de Nascimento:</h1>
+              <p>03, julho 1998</p>
+              </div>
+
+            <div>
+              <h1>Endereço:</h1>
+              <p>Recife, Pernambuco</p>
+            </div>
+
+           </div>
+
+        </div>
+
+        </div>
+
+        <div>
+          <div class="container-img">
+            <img src="src/images/Hand coding-bro.png" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>  
+  
+  <section id="curriculo" class="curriculo">
+
+  </section>
+
+  <section id="portfolio" class="portfolio">
+
+  </section>
+
+  <section id="contato" class="contato">
+
+  </section>
+
+  <footer class="footer">
         <p>Todos os direitos reservados © by Jonathan Pereira 2024</p>
-    </footer>
+  </footer>
 
 
 
-    <script src="script.js"></script>
+  <script src="src/javascript/typing-effect.js"></script>
+  
     
 </body>
 </html>
