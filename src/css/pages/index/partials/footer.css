@@ -1,3 +1,5 @@
+
+
 .footer {
   display: flex;
   justify-content: center;
@@ -16,7 +18,7 @@
   color: var(--white);
   text-align: center;
   padding: 2rem 10rem;
-  border-top: solid 0.1px rgba(255, 255, 255, 0.102);
+  border-top: solid 0.1px var(--gray);
 }
 
 .footer .copy img {

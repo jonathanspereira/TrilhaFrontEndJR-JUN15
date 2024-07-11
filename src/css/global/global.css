@@ -1,0 +1,23 @@
+
+:root {
+  --primary: #000000;
+  --secondary: #e53939;
+  --white: #ffffff;
+  --gray:#8c8989;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+html, body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+}

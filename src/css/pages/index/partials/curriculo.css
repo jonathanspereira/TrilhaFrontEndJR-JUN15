@@ -1,0 +1,57 @@
+.curriculo {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.curriculo .container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.container .about {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 16px;
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+.container .title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.cv{
+  font-family: inherit;
+  font-size: 17px;
+  background: var(--white);
+  color: var(--secondary);
+  padding: 1.2rem 1.2em;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.cv:active {
+  transform: scale(0.95);
+}

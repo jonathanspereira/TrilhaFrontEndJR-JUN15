@@ -1,10 +1,10 @@
-.contato {
+.portfolio {
   color: var(--white);
   display: flex;
   justify-content: center;
 }
 
-.contato .container {
+.portfolio .container {
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
