@@ -2,6 +2,8 @@
   color: var(--white);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contato .container {
@@ -28,4 +30,31 @@
   font-weight: bold;
   text-align: center;
   padding: 2rem 0;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.redes-sociais img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.redes-sociais img:hover {
+  transform: scale(1.2);
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+  .container .title {
+    font-size: 2rem;
+  }
+
+  .redes-sociais img {
+    width: 3rem;
+    height: 3rem;
+  }
 }

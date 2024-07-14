@@ -1,170 +1,205 @@
 .header {
-    background: linear-gradient(to bottom, var(--secondary) -12%, var(--primary));
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .header img {
-    width: 10rem;
-    height: 2rem;
-  }
-  
-  .header nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 2rem 10rem;
-    justify-content: space-between;
-    
-  }
-  
-  .header nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 4rem;
-    font-size: 1.3rem;
-  }
-  
-  .header nav ul li a {
-    color: var(--white);
-    text-decoration: none;
-    font-weight: bold;
-  
-  }
-  
-  .header nav ul li a:hover {
-    color: var(--primary);
-    transition: 0.5s;
-    font-weight: bold;
-  
-  }
-  
-  .home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    flex-direction: column;
-    font-size: 18px;
-    height: 50rem;
-    padding: 0 10rem;
-    width: 100%;
-    justify-items: start;
-    align-items: center;
-    font-weight: bold;
-  
-  }
-  
-  .home p {
-    font-size: 1.5rem;
-  }
-  
-  /* Typing Effect */
-  .container-typed-text {
-    display: flex;
-  }
-  
-  .container-typed-text p {
-    font-size: 4rem;
-    padding: 2rem 0;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    overflow: hidden;
-  }
-  
-  .container-typed-text p span.typed-text {
-    font-weight: normal;
-    color: var(--white);
-    font-weight: bold;
-  }
-  
-  .container-typed-text p span.cursor {
-    display: inline-block;
+  background: linear-gradient(to bottom, var(--secondary) -12%, var(--primary));
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.header img {
+  width: 10rem;
+  height: 2rem;
+}
+
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 10rem;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 4rem;
+  font-size: 1.3rem;
+}
+
+.header nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header nav ul li a:hover {
+  color: var(--primary);
+  transition: 0.5s;
+  font-weight: bold;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  flex-direction: column;
+  font-size: 18px;
+  height: 50rem;
+  padding: 0 10rem;
+  width: 100%;
+  justify-items: start;
+  align-items: center;
+  font-weight: bold;
+}
+
+.home p {
+  font-size: 1.5rem;
+}
+
+/* Typing Effect */
+.container-typed-text {
+  display: flex;
+}
+
+.container-typed-text p {
+  font-size: 4rem;
+  padding: 2rem 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-typed-text p span.typed-text {
+  font-weight: normal;
+  color: var(--white);
+  font-weight: bold;
+}
+
+.container-typed-text p span.cursor {
+  display: inline-block;
+  background-color: var(--white);
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 0.5s infinite;
+}
+
+.container-typed-text p span.cursor.typing {
+  animation: none;
+}
+
+@keyframes blink {
+  0% {
     background-color: var(--white);
-    margin-left: 0.1rem;
-    width: 3px;
-    animation: blink 0.5s infinite;
   }
-  
-  .container-typed-text p span.cursor.typing {
-    animation: none;
+  49% {
+    background-color: var(--white);
   }
-  
-  @keyframes blink {
-    0%  { background-color: var(--white); }
-    49% { background-color: var(--white); }
-    50% { background-color: transparent; }
-    99% { background-color: transparent; }
-    100%  { background-color: var(--white); }
+  50% {
+    background-color: transparent;
   }
-  /* Typing Effect */
-  
-  /* Home Button Effect */
-  button {
-    font-family: inherit;
-    font-size: 17px;
-    background: var(--white);
-    color: var(--secondary);
-    padding: 1.2rem 1.2em;
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    border: none;
-    border-radius: 16px;
-    overflow: hidden;
-    transition: all 0.2s;
-    cursor: pointer;
+  99% {
+    background-color: transparent;
   }
-  
-  button span {
-    display: block;
-    margin-left: 0.3em;
-    transition: all 0.3s ease-in-out;
-    font-weight: bold;
+  100% {
+    background-color: var(--white);
   }
-  
-  button svg {
-    display: block;
-    transform-origin: center center;
-    transition: transform 0.3s ease-in-out;
+}
+/* Typing Effect */
+
+/* Home Button Effect */
+button {
+  font-family: inherit;
+  font-size: 17px;
+  background: var(--white);
+  color: var(--secondary);
+  padding: 1.2rem 1.2em;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+  transform: translateX(2.8em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+  transform: translateX(8em);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
   }
-  
-  button:hover .svg-wrapper {
-    animation: fly-1 0.6s ease-in-out infinite alternate;
+
+  to {
+    transform: translateY(-0.1em);
   }
-  
-  button:hover svg {
-    transform: translateX(2.8em) rotate(45deg) scale(1.1);
+}
+/* Home Button Effect */
+
+.home .column2 img {
+  padding-top: -20rem;
+  height: 40rem;
+  width: 40rem;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .header nav ul {
+    gap: 2rem;
+    font-size: 1rem;
   }
-  
-  button:hover span {
-    transform: translateX(8em);
+
+  .home {
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+    height: auto;
   }
-  
-  button:active {
-    transform: scale(0.95);
+
+  .home .column2 img {
+    height: 20rem;
+    width: 20rem;
   }
-  
-  @keyframes fly-1 {
-    from {
-      transform: translateY(0.1em);
-    }
-  
-    to {
-      transform: translateY(-0.1em);
-    }
+}
+
+@media (max-width: 480px) {
+  .header nav {
+    padding: 2rem;
   }
-  /* Home Button Effect */
-  
-  
-  .home .column2 img{
-    padding-top: -20rem;
-    height: 40rem;
-    width: 40rem;
-    background-size: cover;
-    background-position: center;
+
+  .home {
+    padding: 0 1rem;
   }
+}
+/* Media Queries */

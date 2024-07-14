@@ -9,11 +9,13 @@
     <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Jonathan | Meu curriculo</title>
 </head>
 <body>
 
+  
   <header class="header">
     <nav>
 
@@ -125,7 +127,7 @@
         
         <div class="text-tag">
           <img src="src/svg/International Day of families-bro.svg" alt="">
-          <p>
+          <p class="headline">
             Minha maior motivação na carreira é poder <span>ajudar as pessoas a resolverem seus problemas do dia a dia</span>, 
             seja com um simples algoritmo ou com uma aplicação web. Acredito que a <span>tecnologia é uma ferramenta 
             poderosa para transformar a vida das pessoas</span> e é por isso que estou sempre buscando aprender mais e me aprimorar.
@@ -138,7 +140,7 @@
         </div>
 
         <div class="text-tag2">
-          <p>
+          <p class="headline">
             Tenho como objetivo de carreira me tornar um <span>desenvolvedor Full-Stack</span>,
             com habilidades tanto no <span>Front-end quanto no Back-end</span>.
             Além disso, quero poder trabalhar em uma empresa que me permita crescer e me desenvolver profissionalmente,
@@ -153,7 +155,7 @@
         </div>
 
         <div class="text-tag3">
-          <p>
+          <p class="headline">
             Gosto de passar meu tempo livre jogando <span>video game</span>, assistindo <span>filmes e séries</span>, escutar uma boa <span>música MPB, Pagode e Rap</span> e 
             assistir <span>meu Corinthians jogar</span>, gosto também de <span>jogar futebol</span> e sair para <span>conhecer lugares novos</span>, 
             principalmente restaurantes e <span>apreciar um bom vinho</span>. Além disso, gosto de <span>passar um tempo com a minha familia</span> e amigos, 
@@ -180,9 +182,58 @@
 
       <div class="title"><p>Meus conhecimentos</p></div>
 
+      
+
       <div class="container-tag">
         <div class="tag">
           <span>Educação</span>
+        </div>
+
+        <div>
+          <div class="container-education">
+            <h1>Formações</h1>
+
+            <div class="formacao">
+              <div class="education">
+                <p>Ciências da Computação</p>
+                <a>Estácio de Sá</a>
+                <a>(2023 - cursando)</a>
+              </div>
+            </div>
+
+
+            <h1>Cursos e Certificados</h1>
+
+
+            <div class="certificacao">
+              <div class="education">
+                <p>Fundamentos da IA Generativa e Claude 3</p>
+                <a>DIO + NEXA</a>
+                <a>(2024)</a>
+              </div>
+
+              <div class="education">
+                <p>Bootcamp Backend com JAVA</p>
+                <a>DIO + Santander</a>
+                <a>(2024)</a>
+              </div>
+
+              <div class="education">
+                <p>Power BI</p>
+                <a>Data Mundo</a>
+                <a>(2024)</a>
+              </div>
+
+              <div class="education">
+                <p>Data Analytics</p>
+                <a>Coursera + Google</a>
+                <a>(2023)</a>
+              </div>
+
+              
+            </div>
+
+
         </div>
 
         <div class="tag">
@@ -191,43 +242,110 @@
 
           <div class="container-skills">
             <div class="skills">
-              <img src="./src/svg/icons8-html.svg" alt="">
-              <img src="./src/svg/icons8-css3.svg" alt="">
-              <img src="./src/svg/icons8-javascript.svg" alt="">
+              
+              <img src="./src/svg/icons8-programação-c.svg" alt="c">
               <img src="./src/svg/icons8-python.svg" alt="">
               <img src="./src/svg/icons8-logo-java-coffee-cup.svg" alt="">
-              <img src="./src/svg/icons8-github.svg" alt="">
-              <img src="./src/svg/icons8-git.svg" alt="">
-              <img src="./src/svg/icons8-logo-bootstrap.svg" alt="">
-              <img src="./src/svg/icons8-power-bi.svg" alt="">
-              <img src="./src/svg/icons8-postgreesql.svg" alt="">
+              <img src="./src/svg/icons8-javascript.svg" alt="">
+              <img src="./src/svg/icons8-r-project.svg" alt="">
 
+              <img src="./src/svg/icons8-html.svg" alt="">
+              <img src="./src/svg/icons8-css3.svg" alt="">
+              <img src="./src/svg/icons8-logo-bootstrap.svg" alt="">
+              <img src="./src/svg/icons8-figma.svg" alt="">
+              <img src="./src/svg/icons8-github.svg" alt="">
+
+              <img src="./src/svg/icons8-git.svg" alt="">
+              <img src="./src/svg/icons8-postgreesql.svg" alt="">
+              <img src="./src/svg/icons8-power-bi.svg" alt="">
+              <img src="./src/svg/icons8-software-tableau.svg" alt="">
+              <img src="./src/svg/icons8-ms-excel.svg" alt="">
               
             </div>
       </div>
-  </div>
-
-  <div>
-    <a class="cv" href="files/Curriculo.pdf" download>Download CV</a>
-  </div>
 
 
+
+    </div>
+
+    </div>
+
+    <div>
+      <a class="cv" href="files/Curriculo.pdf" download>Download Curriculo</a>
+    </div>
   </section>
 
   <section id="portfolio" class="portfolio">
     <div class="container">
       <div class="about"><p>Portfolio</p></div>
 
-    <div class="title"><p>Meus Projetos</p></div>
+      <div class="title"><p>Meus Projetos</p></div>
+
+      <div class="container-portfolio">
+        <div class="portfolio portfolio-itens" id="portfolio-item1">
+          <img src="src/images/tictacdev.png" alt="">
+          <p>Jogo da Velha</p>
+        </div>
+        
+        <script>
+          document.getElementById('portfolio-item1').addEventListener('click', function() {
+            window.location.href = 'https://tic-tac-dev.vercel.app/'; 
+          });
+        </script>
+
+        <div class="portfolio">
+          <img src="src/svg/Under construction-cuate.svg" alt="">
+          <p>Em construção</p>
+        </div>
+
+
     </div>
   </section>
 
   <section id="contato" class="contato">
-    <div class="container">
-      <div class="about"><p>Contato</p></div>
-
-    <div class="title"><p>Vamos nos conhecer</p></div>
+    
+    <div>
+      <div class="container">
+        <div class="about"><p>Contato</p></div>
+  
+         <div class="title"><p>Vamos nos conhecer</p></div>
+      </div>
     </div>
+
+    <div class="container-redes-sociais"></div>
+      <div class="redes-sociais">
+          <div>
+            <a href="https://www.linkedin.com/in/jonathan-pereira-791ba719a/">
+              <img src="src/svg/redes sociais/icons8-linkedin.svg" alt="LinkedIn">
+            </a>
+          </div>
+
+          <div>
+            <a href="https://github.com/jonathanspereira">
+              <img src="src/svg/redes sociais/icons8-github.svg" alt="GitHub">
+            </a>
+          </div>
+
+         <div>
+            <a href="https://www.instagram.com/john__spe/">
+              <img src="src/svg/redes sociais/icons8-instagram.svg" alt="Instagram">
+            </a>
+          </div>
+          
+          <div>
+            <a href="https://wa.link/krkypl">
+              <img src="src/svg/redes sociais/icons8-whatsapp.svg" alt="Whatsapp">
+            </a>
+          </div>
+      
+          <div>
+            <img src="src/svg/redes sociais/line-md--email.svg" alt="Email">
+          </div>
+      </div>
+      </div>
+    </div>
+
+    
   </section>
 
   <footer class="footer">
@@ -241,10 +359,15 @@
     <a href="#top"><i class="fa fa-angle-up scrolltop"></i></a>
   </div>
 
-
+  <script>
+		ScrollReveal().reveal('.headline',  { delay: 200 });
+	</script>
 
   <script src="src/javascript/pages/index/partials/typing-effect.js"></script>
   <script src="src/javascript/global/back-to-top.js"></script>
+
+  
+
   
     
 </body>

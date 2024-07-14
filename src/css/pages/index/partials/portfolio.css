@@ -29,3 +29,71 @@
   text-align: center;
   padding: 2rem 0;
 }
+
+.container-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio {
+  margin: 1rem;
+}
+
+.container-portfolio .portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30rem;
+  height: 25rem;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 2px solid var(--secondary);
+}
+
+.container-portfolio .portfolio img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+
+.container-portfolio .portfolio p {
+  font-size: 1.5rem;
+  border-radius: 16px;
+  padding-top: 1rem;
+}
+
+.portfolio-itens {
+  position: relative;
+}
+
+.portfolio-itens:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-itens:hover::after {
+  content: "Visite o site";
+  position: absolute;
+  height: 99%;
+  width: 99%;
+  background-color: rgba(0, 0, 0, 0.644);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 2rem;
+}
+
+/* Media queries para tornar o código responsivo */
+
+@media screen and (max-width: 768px) {
+  .container-portfolio .portfolio {
+    width: 100%;
+    height: auto;
+  }
+}
