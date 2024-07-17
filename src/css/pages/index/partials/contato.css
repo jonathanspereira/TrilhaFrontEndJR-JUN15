@@ -1,60 +1,47 @@
-.contato {
-  color: var(--white);
+.contact-section {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.contato .container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-  width: 100%;
   justify-items: center;
   align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
-.container .about {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  padding: 0.5rem;
-  width: 10rem;
+.social-media {
+  display: flex;
+  margin-top: 20px;
+  gap: 2rem;
 }
 
-.container .title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.redes-sociais {
+.social-media img {
   display: flex;
   justify-content: center;
-  gap: 3rem;
+  align-items: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 16px;
+  border: 2px solid var(--secondary);
+  padding: 1rem;
 }
 
-.redes-sociais img {
-  width: 5rem;
-  height: 5rem;
+.social-media img:hover {
+  transform: scale(1.05);
 }
 
-.redes-sociais img:hover {
-  transform: scale(1.2);
-}
-
-/* Estilos para telas menores */
+/* Adicione as regras de mídia aqui */
 @media screen and (max-width: 768px) {
-  .container .title {
-    font-size: 2rem;
+  .contact-section {
+    margin-top: 30px;
   }
 
-  .redes-sociais img {
-    width: 3rem;
-    height: 3rem;
+  .social-media {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .social-media img {
+    width: 5rem;
+    height: 5rem;
   }
 }

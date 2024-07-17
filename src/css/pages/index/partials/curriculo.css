@@ -1,207 +1,133 @@
-.curriculo {
-  color: var(--white);
+.curriculum-section {
   display: flex;
-}
-
-.curriculo .container {
-  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  padding-top: 5rem;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
+  gap: 2rem;
+  color: var(--white);
 }
 
-.container .about {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  padding: 0.5rem;
-  width: 10rem;
-}
-
-.container .title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.cv {
-  font-family: inherit;
-  font-size: 17px;
-  background: var(--white);
-  color: var(--secondary);
-  padding: 1.2rem 1.2em;
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: all 0.2s;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  justify-items: center;
-  align-items: center;
-  justify-content: center;
-  width: 20rem;
-}
-
-.cv {
-  padding: 2rem;
-  margin-top: 5rem;
-}
-
-.cv:active {
-  transform: scale(0.95);
-}
-
-.skills {
+.education-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0rem 5rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.education-section .container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.training {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.skills img {
-  border-radius: 16px;
-  width: calc(20% - 2rem);
-  height: 10rem;
-  padding: 1rem;
-  border: 2px solid var(--secondary);
-  transition: all 0.2s;
+.courstraining > div:nth-child(4n+1) {
+  clear: left;
 }
 
-.skills img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.skills img:hover::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--white);
-  padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.skills img:hover::after {
-  opacity: 1;
-}
-
-.container-education h1 {
-  padding: 2rem 0 1rem 0;
-}
-
-.education {
-  padding: 2rem;
-  margin-top: 2rem;
-  border-radius: 16px;
-  border: 2px solid var(--secondary);
-  width: 25rem;
-}
-
-.education:hover {
-  transform: scale(1.05);
-}
-
-.education:hover::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-.education:hover::after {
-  opacity: 1;
-}
-
-.education p {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.education a {
-  color: var(--secondary);
-}
-
-.certificacao {
+.courses {
   display: flex;
-  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  padding: 2rem 0;
 }
 
-/* Media queries para tornar o código responsivo */
+.courses > div:nth-child(4n+1) {
+  clear: left;
+}
+
+.education-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 30rem;
+  gap: 2rem;
+  border: 2px solid var(--secondary);
+  border-radius: 16px;
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  height: 10rem;
+}
+
+.education-item  p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.education-item  span {
+  color: var(--secondary);
+  font-weight: bold;
+
+}
+
+.education-item:hover {
+  transform: scale(1.1);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.skills-container img {
+  border-radius: 16px;
+  border: 2px solid var(--secondary);
+  padding: 1rem;
+  transition: transform 0.3s ease-in-out;
+  width: 10rem;
+  height: 10rem;
+}
+
+.skills-container img:hover {
+  transform: scale(1.1);
+}
+
+.skills-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Responsividade*/
 
 @media screen and (max-width: 768px) {
-  .curriculo .container {
-    padding-top: 2rem;
+  .education-item {
+    width: 80%; 
   }
 
-  .container .title {
-    font-size: 2rem;
-  }
-
-  .cv {
-    width: 15rem;
-  }
-
-  .skills {
-    padding: 0rem 2rem;
-  }
-
-  .skills img {
-    width: calc(33.33% - 2rem);
-    height: 8rem;
-  }
-
-  .education {
-    width: 20rem;
+  .skills-container img {
+    width: calc(50% - 4rem);
   }
 }
 
 @media screen and (max-width: 480px) {
-  .curriculo .container {
-    padding-top: 1rem;
+  .curriculum-section,
+  .education-section,
+  .training,
+  .courses,
+  .skills-section {
+    gap: 1rem;
   }
 
-  .container .title {
-    font-size: 1.5rem;
-  }
-
-  .cv {
-    width: 12rem;
-  }
-
-  .skills {
-    padding: 0rem 1rem;
-  }
-
-  .skills img {
-    width: calc(50% - 2rem);
-    height: 6rem;
-  }
-
-  .education {
-    width: 15rem;
+  .education-item,
+  .skills-container img {
+    padding: 0.5rem; 
   }
 }

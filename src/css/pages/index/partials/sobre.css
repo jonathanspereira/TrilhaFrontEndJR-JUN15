@@ -1,220 +1,166 @@
-.aboutme {
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  padding-top: 5rem;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-}
-
-.container .about {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  padding: 0.5rem;
-  width: 10rem;
-}
-
-.container .title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.container .container-description {
-  display: grid;
-  grid-template-columns: 4fr 2fr;
-  gap: 5rem;
-  padding-left: 10rem;
-}
-
-.container .container-description h1 {
-  padding-top: 6rem;
-  font-size: 2rem;
-}
-
-.container .container-description p {
-  font-size: 1.5rem;
-  padding-top: 1rem;
-}
-
-.container-information {
-  display: flex;
-  justify-content: center;
-}
-
-.container-information .contacts {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  justify-self: end;
-  width: 100%;
-}
-
-.contacts div {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  padding-right: 2rem;
-}
-
-.contacts h1 {
-  padding-top: 2rem !important;
-  font-size: 12px !important;
-}
-
-.container-information p {
-  font-size: 15px !important;
-  font-weight: bold;
-  color: var(--secondary);
-  padding: none;
-}
-
-.container-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  height: 25rem;
-  width: 25rem;
-  padding-top: 3rem;
-  padding-right: 3rem;
-  background-size: cover;
-  background-position: center;
-  border: solid 3px var(--secondary);
-}
-
-.container-img img {
-  border-radius: 16px;
-  height: 25rem;
-  width: 25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container-tag {
-  width: 100%;
-  justify-content: start;
-  justify-items: start;
-  align-items: start;
-  padding: 0rem 10rem;
-}
-
-.tag {
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  padding: 0.5rem;
-  margin: 3rem 0;
-  width: 15rem;
-}
-
-.tag p {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  justify-content: center;
-  display: flex;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  width: 15rem;
-  margin-top: 5rem;
-}
-
-.gostos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.gostos img {
-  width: 15rem;
-  height: 15rem;
-  margin: 0 1rem;
-  padding: 1rem;
-  border: 2px solid var(--secondary);
-  border-radius: 16px;
-}
-
-.text-tag {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 1rem;
-  padding-left: 10rem;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 0;
-}
-
-.text-tag img {
-  width: 20rem;
-  height: 20rem;
-  margin: 0 1rem;
-  padding: 1rem;
-  border: 2px solid var(--secondary);
-  border-radius: 16px;
-}
-
-.text-tag2 {
+.section {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  padding-left: 10rem;
+  grid-gap: 20px;
+  color: var(--white);
   justify-content: center;
   align-items: center;
-  padding: 2rem 0;
+  justify-items: center;
+  align-self: center;
 }
 
-.text-tag2 img {
-  width: 20rem;
-  height: 20rem;
-  margin: 0 1rem;
-  padding: 1rem;
-  border: 2px solid var(--secondary);
-  border-radius: 16px;
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.text-tag p,
-.text-tag2 p,
-.text-tag3 p {
-  padding: 2rem;
-  border-radius: 16px;
-  border: 2px solid var(--secondary);
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  gap: 2rem;
 }
 
-.text-about span,
-.text-tag span,
-.text-tag2 span,
-.text-tag3 span {
+.personal-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.personal-info {
+  display: flex;
+  gap: 5rem;
+}
+
+.personal-info p {
   color: var(--secondary);
-  font-weight: bold;
 }
 
-/* Media queries */
+.personal-description p {
+  text-align: justify;
+}
+
+.personal-description span {
+  color: var(--secondary);
+}
+
+.about-image {
+  border-radius: 16px!important;
+  border: 2px solid var(--secondary);
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  width: 20rem;
+}
+
+.about-image img {
+  border-radius: 16px;
+  width: 20rem;
+  height: 25rem;
+  margin: 2rem 0 0 -2rem;
+}
+
+.motivations{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+.motivation-item, .goals-item, .hobbies-item {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.motivation-item div, .goals-item div, .hobbies-itemdiv div {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-self: center;
+}
+
+.motivation-item img, .goals-item img, .hobbies-item img {
+  width: 20rem;
+  border-radius: 16%;
+  border: 2px solid var(--secondary);
+}
+
+.motivation-item p, .goals-item p, .hobbies-item p {
+  width: 80%;
+  height: auto;
+  text-align: justify;
+  border: 2px solid var(--secondary); 
+  border-radius: 16px ; 
+  padding: 1rem;
+}
+
+.motivation-item span, .goals-item span, .hobbies-item span {
+  color: var(--secondary);
+}
+
+.personal-hobbies {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Media queries para tornar o código responsivo */
+
 @media screen and (max-width: 768px) {
-  .container .container-description {
+  .section {
     grid-template-columns: 1fr;
-    padding-left: 0;
   }
 
-  .text-tag,
-  .text-tag2 {
-    grid-template-columns: 1fr;
-    padding-left: 0;
+  .about-image {
+    width: 70%;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    margin: 2rem 0 -2rem -2rem;
+  }
+
+  .motivation-item div, .goals-item div, .hobbies-itemdiv div {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-hobbies {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .about-text {
+    width: 80%;
+  }
+
+  .personal-hobbies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+   align-self: center;
+  }
+
+  .personal-hobbies img {
+    width: 80%;
   }
 }

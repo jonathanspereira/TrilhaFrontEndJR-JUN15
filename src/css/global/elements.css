@@ -1,20 +1,72 @@
+button {
+  font-family: inherit;
+  font-size: 17px;
+  background: var(--white);
+  color: var(--secondary);
+  padding: 1.2rem 1.2em;
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+button a {
+  color: var(--secondary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--secondary);
+  border-radius: 16px;
+  padding: 0.5rem;
+  margin-block: 3rem;
+  width: 20rem;
+  color: var(--white);
+}
+
+.subtitle {
+  color: var(--white);
+  font-weight: bold;
+  text-align: center;
+}
+
 #back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    background-color: var(--white);
-    color: var(--secondary);
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  
-  #back-to-top i {
-    color: var(--secondary);
-    text-decoration: none;
-    font-size: 2rem;
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--white);
+  color: var(--secondary);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#back-to-top i {
+  color: var(--secondary);
+  text-decoration: none;
+  font-size: 2rem;
+}

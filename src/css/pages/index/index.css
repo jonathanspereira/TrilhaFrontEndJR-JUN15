@@ -1,6 +1,7 @@
 @import "./../../global/global.css";
 @import "./../../global/fonts.css";
 @import "./../../global/elements.css";
+@import "./../../global/variables.css";
 
 
 @import "./partials/header.css";

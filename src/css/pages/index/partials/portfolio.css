@@ -1,79 +1,53 @@
-.portfolio {
-  color: var(--white);
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio .container {
+.portfolio-section {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
-  width: 100%;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
+  gap: 2rem;
+  color: var(--white);
 }
 
-.container .about {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  background-color: var(--secondary);
-  border-radius: 16px;
-  padding: 0.5rem;
-  width: 10rem;
-}
-
-.container .title {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.container-portfolio {
+.portfolio-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.portfolio {
-  margin: 1rem;
-}
-
-.container-portfolio .portfolio {
+.portfolio-item {
+  position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 30rem;
-  height: 25rem;
-  border-radius: 16px;
-  padding: 1rem;
+  flex-direction: column;
+  width: 100%;
+  max-width: 30rem;
+  height: 30rem;
+  gap: 1rem;
   border: 2px solid var(--secondary);
+  border-radius: 16px;
+  margin-top: 3rem;
 }
 
-.container-portfolio .portfolio img {
+.portfolio-item img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 16px;
+  padding: 1rem;
 }
 
-.container-portfolio .portfolio p {
+.portfolio-item p {
   font-size: 1.5rem;
-  border-radius: 16px;
-  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.portfolio-itens {
-  position: relative;
-}
-
-.portfolio-itens:hover {
+.portfolio-item:hover {
   transform: scale(1.05);
 }
 
-.portfolio-itens:hover::after {
+.portfolio-item:hover::after {
   content: "Visite o site";
   position: absolute;
   height: 99%;
@@ -89,11 +63,11 @@
   margin: 2rem;
 }
 
-/* Media queries para tornar o código responsivo */
-
-@media screen and (max-width: 768px) {
-  .container-portfolio .portfolio {
-    width: 100%;
+/* Media query para dispositivos com largura de tela menor que 768px */
+@media (max-width: 767px) {
+  .portfolio-item {
+    max-width: 70%;
     height: auto;
+    margin-top: 2rem;
   }
 }
